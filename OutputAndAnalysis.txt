@@ -21,7 +21,7 @@ Rick Olenick
 
 
   File	        Best Starting Vertex	     Cost	    Runtime
-a280.tsp	        16	            3094.278	 3.286 seconds
+a280.tsp	        161	            3094.278	 3.286 seconds
 berlin52.tsp	        40	            8182.191	 0.031 seconds
 ei151.tsp	        47	             505.773	 0.033 seconds
 eil76.tsp         	4	             612.655	 0.074 seconds
