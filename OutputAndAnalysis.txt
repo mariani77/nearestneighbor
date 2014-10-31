@@ -1,0 +1,75 @@
+Design and Analysis of Algorithms
+
+
+
+Section 1
+Dr. Baliga
+
+
+
+
+
+Nearest Neighbor Traveling Salesperson Problem
+
+
+
+
+
+
+Nick Mariani
+Rick Olenick
+
+
+  File	        Best Starting Vertex	        Cost	    Runtime
+a280.tsp	            161                   3094.278	3.286 seconds
+berlin52.tsp	        40	                  8182.191	0.031 seconds
+ei151.tsp	            47	                   505.773	0.033 seconds
+eil76.tsp         	  4	                     612.655	0.074 seconds
+kroA100.tsp	          85	                 24698.496	0.147 seconds
+kroC100.tsp	          38	                 23566.402	0.138 seconds
+kroD100.tsp	          14	                 24855.799	0.137 seconds
+rd100.tsp	            81	                  9427.333	0.148 seconds
+
+Code Analysis
+
+These pieces of code are stripped down versions of the nearestNeighbor and getNextCity methods which 
+only show the most important segments in order to calculate the Big O estimation for this project. 
+Runtime: Ο(n^3)
+
+
+/**
+ * This method generates the best possible Nearest Neighbor tour.
+ * @param cities
+ */
+private void nearestNeighbor(LinkedList<Cities> cities)
+{
+  	//do code
+    for(int i = 0; i < cities.size(); i++)
+    {
+    		//do code
+        getNextCity(startCity, currentCity);
+    }
+}
+The for loop has a runtime of n but, since it calls the getNextCity function each time through
+the loop, it is combined with the getNextCity runtime.
+
+
+/**
+ * This method finds the closest city to its specific location.
+ * Each closest city will be added to the cycle list.
+ * @param startCity
+ * @param currentCity
+ */
+private void getNextCity(Cities startCity, Cities currentCity)
+{
+      while(remaining.size() != 0) 
+      { 
+		      //do code
+          for(int k = 0; k <= remaining.size() - 1; k++)
+          {
+            	//do code  
+          }
+      }
+}
+In this method, we have nested loops, each with n time. Therefore, this method has a runtime of n^2.
+Overall Runtime: n * n^2 = O(n^3)
