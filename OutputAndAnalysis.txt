@@ -20,18 +20,18 @@ Nick Mariani
 Rick Olenick
 
 
-  File	        Best Starting Vertex	        Cost	    Runtime
-a280.tsp	            161                   3094.278	3.286 seconds
-berlin52.tsp	        40	                  8182.191	0.031 seconds
-ei151.tsp	            47	                   505.773	0.033 seconds
-eil76.tsp         	  4	                     612.655	0.074 seconds
-kroA100.tsp	          85	                 24698.496	0.147 seconds
-kroC100.tsp	          38	                 23566.402	0.138 seconds
-kroD100.tsp	          14	                 24855.799	0.137 seconds
-rd100.tsp	            81	                  9427.333	0.148 seconds
+  File	        Best Starting Vertex	     Cost	    Runtime
+a280.tsp	        16	            3094.278	 3.286 seconds
+berlin52.tsp	        40	            8182.191	 0.031 seconds
+ei151.tsp	        47	             505.773	 0.033 seconds
+eil76.tsp         	4	             612.655	 0.074 seconds
+kroA100.tsp	        85	           24698.496	 0.147 seconds
+kroC100.tsp	        38	           23566.402	 0.138 seconds
+kroD100.tsp	        14	           24855.799	 0.137 seconds
+rd100.tsp	        81	            9427.333	 0.148 seconds
 
-Code Analysis
 
+Code Analysis:
 These pieces of code are stripped down versions of the nearestNeighbor and getNextCity methods which 
 only show the most important segments in order to calculate the Big O estimation for this project. 
 Runtime: Ο(n^3)
